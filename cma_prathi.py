@@ -1,12 +1,11 @@
 import streamlit as st
 import google.generativeai as genai
 
-# 1. API KEY SETUP
-API_KEY = "AQ.Ab8RN6JoMSpsbRps7wOaxdGREEcV6jifLG2Wg2NKgW3sjolXIA"
+# Streamlit secrets moolama mattum eduthukum (GitHub-la leak aagathu)
+API_KEY = st.secrets["AQ.Ab8RN6I7r-LxF6lhMHu96siM-3SeaXHD8FInr_u1sC_tLDQneA"]
 genai.configure(api_key=API_KEY)
 
-# Active Gemini Flash model
-model = genai.GenerativeModel('gemini-3.6-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 st.set_page_config(page_title="CMA Trainer", page_icon="🎓", layout="wide")
 
